@@ -1,2 +1,140 @@
-# portfolio-projects
-There is a lab experiment of the web development classes 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    /* Optional: Add smooth scroll and basic layout */
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: normal;
+      margin: 10;
+      padding: 5;
+    }
+    header, nav, main, section, footer {
+      padding: 20px;
+    }
+    nav a {
+      margin-right: 15px;
+    }
+    .hero {
+      background-color: #f0f0f0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    img.profile {
+      width: 150px;
+      border-radius: 50%;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" style="position: absolute; left: -999px;">Skip to main content</a>
+
+  <!-- Header and Navigation -->
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Welcome to My Portfolio</h2>
+      <p>I'm an aspiring web developer passionate about building accessible and responsive websites.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3MU3OBvF3OjeceW3K0jxnMpzJE9d9jeHEcw&s" alt="Profile picture of [kartik chauhan]]" class="profile" align-self: center; />
+      <p>Hi! I'm kartik chauhan, a web development enthusiast with a love for clean code and user-friendly designs.</p>
+    </section><hr>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Portfolio Website:</strong> A responsive one-page website showcasing my work and skills.</li>
+        <li><strong>To-Do App:</strong> A JavaScript-based task manager with local storage support.</li>
+        <li><strong>Daily Calorie Tracker:</strong>  This program will help you track your calorie intake for the day. It will allow you to add food items and their corresponding calorie counts, and it will display the total calorie count for the day.</li>
+        <li><strong>Weather Dashboard</strong> - A responsive app displaying weather using a public API.</li>
+      </ul>
+    </section><hr>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <table border="5" cellpadding="10" cellspacing="5">
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Proficiency</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Advanced</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Beginner</td>
+          </tr>
+        </tbody>
+      </table>
+    </section><hr>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" placeholder="Your full name" required /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" placeholder="you@example.com" required /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea><br /><br />
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section><hr>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 [kartik chauhan]. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
