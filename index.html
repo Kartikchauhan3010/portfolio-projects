@@ -2,69 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
   <style>
-    /* Basic styling for complete code */
+    /* Optional: Add smooth scroll and basic layout */
     html {
       scroll-behavior: smooth;
     }
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
+      line-height: normal;
+      margin: 10;
+      padding: 5;
     }
-    header, nav, section, footer {
+    header, nav, main, section, footer {
       padding: 20px;
     }
     nav a {
       margin-right: 15px;
     }
+    .hero {
+      background-color: #f0f0f0;
+      padding: 40px 20px;
+      text-align: center;
+    }
     img.profile {
-      max-width: 150px;
+      width: 150px;
       border-radius: 50%;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 10px;
     }
     th, td {
-      border: 1px solid #ddd;
+      border: 1px solid #ccc;
       padding: 8px;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      max-width: 400px;
-    }
-    .skip-link {
-      position: absolute;
-      top: -40px;
-      left: 0;
-      background: #000;
-      color: #fff;
-      padding: 8px;
-      z-index: 100;
-    }
-    .skip-link:focus {
-      top: 0;
+      text-align: left;
     }
   </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <!-- Accessibility Skip Link -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" style="position: absolute; left: -999px;">Skip to main content</a>
 
-  <!-- Header Section -->
+  <!-- Header and Navigation -->
   <header>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi! I'm a passionate web developer. Here's a bit about me and my work.</p>
-    <!-- Navigation Bar -->
+    <h1>My Portfolio</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -75,28 +61,34 @@
 
   <!-- Main Content -->
   <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Welcome to My Portfolio</h2>
+      <p>I'm an aspiring web developer passionate about building accessible and responsive websites.</p>
+    </section>
 
     <!-- About Section -->
     <section id="about">
       <h2>About Me</h2>
-      <img src="https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg" alt="Profile picture of [kartik chauhan]" class="profile" />
-      <p>Hello! I am kartik chauhan,a web developer focused on building accessible, responsive, and user-friendly websites with clean, maintainable code.</p>
-    </section>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3MU3OBvF3OjeceW3K0jxnMpzJE9d9jeHEcw&s" alt="Profile picture of [kartik chauhan]]" class="profile" align-self: center; />
+      <p>Hi! I'm kartik chauhan, a web development enthusiast with a love for clean code and user-friendly designs.</p>
+    </section><hr>
 
     <!-- Projects Section -->
     <section id="projects">
       <h2>Projects</h2>
       <ul>
-        <li><strong>Portfolio Website</strong> - A personal website showcasing my skills and work.</li>
-        <li><strong>Todo App</strong> - A html-based todo list application with local storage.</li>
+        <li><strong>Portfolio Website:</strong> A responsive one-page website showcasing my work and skills.</li>
+        <li><strong>To-Do App:</strong> A JavaScript-based task manager with local storage support.</li>
+        <li><strong>Daily Calorie Tracker:</strong>  This program will help you track your calorie intake for the day. It will allow you to add food items and their corresponding calorie counts, and it will display the total calorie count for the day.</li>
         <li><strong>Weather Dashboard</strong> - A responsive app displaying weather using a public API.</li>
       </ul>
-    </section>
+    </section><hr>
 
     <!-- Skills Section -->
     <section id="skills">
       <h2>Technical Skills</h2>
-      <table>
+      <table border="5" cellpadding="10" cellspacing="5">
         <thead>
           <tr>
             <th>Skill</th>
@@ -106,7 +98,7 @@
         <tbody>
           <tr>
             <td>HTML</td>
-            <td>Intermediate</td>
+            <td>Advanced</td>
           </tr>
           <tr>
             <td>CSS</td>
@@ -118,24 +110,24 @@
           </tr>
         </tbody>
       </table>
-    </section>
+    </section><hr>
 
     <!-- Contact Section -->
     <section id="contact">
       <h2>Contact Me</h2>
       <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required />
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" placeholder="Your full name" required /><br /><br />
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" required />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" placeholder="you@example.com" required /><br /><br />
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea><br /><br />
 
         <button type="submit">Send Message</button>
       </form>
-    </section>
+    </section><hr>
 
   </main>
 
